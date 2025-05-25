@@ -1,0 +1,31 @@
+{
+	"info": {
+		"_postman_id": "bb293d95-d961-4c5b-84d1-a22321d80f85",
+		"name": "jsonplaceholder",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "44490893",
+		"_collection_link": "https://mamurakterahmed.postman.co/workspace/Mamur-Akter-Ahmed's-Workspace~0a1c68c7-d799-4213-8c04-5915052a70e7/collection/44490893-bb293d95-d961-4c5b-84d1-a22321d80f85?action=share&source=collection_link&creator=44490893"
+	},
+	"item": [
+		{
+			"name": "get all posts",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://jsonplaceholder.typicode.com/posts",
+					"protocol": "https",
+					"host": [
+						"jsonplaceholder",
+						"typicode",
+						"com"
+					],
+					"path": [
+						"posts"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
