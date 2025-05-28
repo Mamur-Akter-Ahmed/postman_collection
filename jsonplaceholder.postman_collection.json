@@ -13,12 +13,9 @@
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": "https://jsonplaceholder.typicode.com/posts",
-					"protocol": "https",
+					"raw": "{{base_url}}/posts",
 					"host": [
-						"jsonplaceholder",
-						"typicode",
-						"com"
+						"{{base_url}}"
 					],
 					"path": [
 						"posts"
@@ -26,6 +23,95 @@
 				}
 			},
 			"response": []
+		},
+		{
+			"name": "get all posts/1",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{base_url}}/posts/1",
+					"host": [
+						"{{base_url}}"
+					],
+					"path": [
+						"posts",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "posts/1/comments",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{base_url}}/posts/1/comments",
+					"host": [
+						"{{base_url}}"
+					],
+					"path": [
+						"posts",
+						"1",
+						"comments"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "comments?postId=1",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{base_url}}/comments?postId=1",
+					"host": [
+						"{{base_url}}"
+					],
+					"path": [
+						"comments"
+					],
+					"query": [
+						{
+							"key": "postId",
+							"value": "1"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"packages": {},
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"packages": {},
+				"exec": [
+					""
+				]
+			}
+		}
+	],
+	"variable": [
+		{
+			"key": "base_url",
+			"value": "https://jsonplaceholder.typicode.com",
+			"type": "string"
 		}
 	]
 }
